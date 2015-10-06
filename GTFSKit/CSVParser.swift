@@ -14,9 +14,6 @@ public protocol CSVParsable {
 
 public class CSVParser {
     private let lines: [String]
-    private var alreadyParsed: Bool = false
-    private var data: [CSVData] = [CSVData]()
-
     public init(lines: [String]) {
         self.lines = lines
     }
@@ -29,8 +26,8 @@ public class CSVParser {
         return line.characters.split(",").map(String.init).map(stripWhitespace)
     }
 
-    private func getParsedData(lines: [String]) -> [CSVData] {
-        var parsedData = [CSVData]()
+    public func parse<T: CSVParsable>(parsable: T.Type) -> [T]? {
+        var instances = [T]()
         var headings = [String]()
 
         for (lineIndex, line) in lines.enumerate() {
@@ -48,28 +45,13 @@ public class CSVParser {
                 lineData[headings[valueIndex]] = values[valueIndex]
             }
 
-            parsedData.append(CSVData(data: lineData))
-        }
-
-        return parsedData
-    }
-
-    public func parse<T: CSVParsable>(parsable: T.Type) -> [T]? {
-        if !alreadyParsed {
-            data = getParsedData(lines)
-            alreadyParsed = true
-        }
-
-        var parsedInstances = [T]()
-
-        for row in data {
-            guard let parsedInstance = parsable.parse(row) else {
+            if let instance = parsable.parse(CSVData(data: lineData)) {
+                instances.append(instance)
+            } else {
                 return nil
             }
-
-            parsedInstances.append(parsedInstance)
         }
 
-        return parsedInstances
+        return instances
     }
 }
