@@ -22,7 +22,7 @@ public class CSVParser {
     }
 
     private func getRowValues(line: String) -> [String] {
-        return line.characters.split(",").map({ String($0) })
+        return line.characters.split(",").map(String.init)
     }
 
     private func getParsedData(lines: [String]) -> [CSVData] {
