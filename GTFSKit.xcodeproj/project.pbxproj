@@ -12,6 +12,7 @@
 		04E13D3F1BC306B80070B75D /* GTFSKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E13D3E1BC306B80070B75D /* GTFSKit.swift */; settings = {ASSET_TAGS = (); }; };
 		04E13D411BC307BD0070B75D /* Agency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E13D401BC307BD0070B75D /* Agency.swift */; settings = {ASSET_TAGS = (); }; };
 		04E13D431BC317690070B75D /* CSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E13D421BC317690070B75D /* CSVParser.swift */; settings = {ASSET_TAGS = (); }; };
+		04E13D451BC3D2510070B75D /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E13D441BC3D2510070B75D /* Stop.swift */; settings = {ASSET_TAGS = (); }; };
 		04E13D471BC3D81B0070B75D /* CSVData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E13D461BC3D81B0070B75D /* CSVData.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		04E13D3E1BC306B80070B75D /* GTFSKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTFSKit.swift; sourceTree = "<group>"; };
 		04E13D401BC307BD0070B75D /* Agency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Agency.swift; sourceTree = "<group>"; };
 		04E13D421BC317690070B75D /* CSVParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVParser.swift; sourceTree = "<group>"; };
+		04E13D441BC3D2510070B75D /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
 		04E13D461BC3D81B0070B75D /* CSVData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +83,7 @@
 				04E13D3E1BC306B80070B75D /* GTFSKit.swift */,
 				04E13D401BC307BD0070B75D /* Agency.swift */,
 				04E13D421BC317690070B75D /* CSVParser.swift */,
+				04E13D441BC3D2510070B75D /* Stop.swift */,
 				04E13D461BC3D81B0070B75D /* CSVData.swift */,
 			);
 			path = GTFSKit;
@@ -206,6 +209,7 @@
 				04E13D411BC307BD0070B75D /* Agency.swift in Sources */,
 				04E13D3F1BC306B80070B75D /* GTFSKit.swift in Sources */,
 				04E13D431BC317690070B75D /* CSVParser.swift in Sources */,
+				04E13D451BC3D2510070B75D /* Stop.swift in Sources */,
 				04E13D471BC3D81B0070B75D /* CSVData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
