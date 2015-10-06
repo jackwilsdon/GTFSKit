@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		044D9E7F1BC3043200ADB986 /* GTFSKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 044D9E7E1BC3043200ADB986 /* GTFSKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		044D9E861BC3043200ADB986 /* GTFSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044D9E7B1BC3043200ADB986 /* GTFSKit.framework */; settings = {ASSET_TAGS = (); }; };
 		044D9E8B1BC3043200ADB986 /* GTFSKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D9E8A1BC3043200ADB986 /* GTFSKitTests.swift */; };
 /* End PBXBuildFile section */
@@ -24,7 +23,6 @@
 
 /* Begin PBXFileReference section */
 		044D9E7B1BC3043200ADB986 /* GTFSKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GTFSKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		044D9E7E1BC3043200ADB986 /* GTFSKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTFSKit.h; sourceTree = "<group>"; };
 		044D9E801BC3043200ADB986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		044D9E851BC3043200ADB986 /* GTFSKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GTFSKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		044D9E8A1BC3043200ADB986 /* GTFSKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTFSKitTests.swift; sourceTree = "<group>"; };
@@ -71,7 +69,6 @@
 		044D9E7D1BC3043200ADB986 /* GTFSKit */ = {
 			isa = PBXGroup;
 			children = (
-				044D9E7E1BC3043200ADB986 /* GTFSKit.h */,
 				044D9E801BC3043200ADB986 /* Info.plist */,
 			);
 			path = GTFSKit;
@@ -93,7 +90,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044D9E7F1BC3043200ADB986 /* GTFSKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
