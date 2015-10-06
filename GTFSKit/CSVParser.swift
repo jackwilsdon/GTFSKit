@@ -8,8 +8,6 @@
 
 import Foundation
 
-public typealias CSVData = [String: String]
-
 public protocol CSVParsable {    
     static func parse(data: CSVData) -> Self?
 }
@@ -40,13 +38,13 @@ public class CSVParser {
             }
             
             let minLength = min(headings.count, values.count)
-            var lineData = CSVData()
+            var lineData = [String: String]()
             
             for valueIndex in 0..<minLength {
                 lineData[headings[valueIndex]] = values[valueIndex]
             }
             
-            parsedData.append(lineData)
+            parsedData.append(CSVData(data: lineData))
         }
         
         return parsedData
