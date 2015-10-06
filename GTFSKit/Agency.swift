@@ -9,13 +9,13 @@
 import Foundation
 
 public struct Agency : CSVParsable {    
-    public let id: String?      // Optional
-    public let name: String     // Required
-    public let url: String      // Required
-    public let timezone: String // Required
-    public let lang: String?    // Optional
-    public let phone: String?   // Optional
-    public let fareUrl: String? // Optional
+    public let id: String?      // agency_id        (Optional)
+    public let name: String     // agency_name      (Required)
+    public let url: String      // agency_url       (Required)
+    public let timezone: String // agency_timezone  (Required)
+    public let lang: String?    // agency_lang      (Optional)
+    public let phone: String?   // agency_phone     (Optional)
+    public let fareUrl: String? // agency_fare_url  (Optional)
     
     public init(id: String?, name: String, url: String, timezone: String, lang: String?, phone: String?, fareUrl: String?) {
         self.id = id
