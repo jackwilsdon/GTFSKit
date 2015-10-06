@@ -8,17 +8,6 @@
 
 import Foundation
 
-public enum RouteType: Int {
-    case Street = 0
-    case Underground = 1
-    case Rail = 2
-    case Bus = 3
-    case Ferry = 4
-    case Cable = 5
-    case Suspended = 6
-    case InclineRail = 7
-}
-
 public struct Route : CSVParsable {
     public let id: String           // route_id         (Required)
     public let agencyId: String?    // agency_id        (Optional)
