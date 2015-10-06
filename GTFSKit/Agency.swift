@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Agency : CSVParsable {    
+public struct Agency : CSVParsable {
     public let id: String?      // agency_id        (Optional)
     public let name: String     // agency_name      (Required)
     public let url: String      // agency_url       (Required)
@@ -16,7 +16,7 @@ public struct Agency : CSVParsable {
     public let lang: String?    // agency_lang      (Optional)
     public let phone: String?   // agency_phone     (Optional)
     public let fareUrl: String? // agency_fare_url  (Optional)
-    
+
     public init(id: String?, name: String, url: String, timezone: String, lang: String?, phone: String?, fareUrl: String?) {
         self.id = id
         self.name = name
@@ -26,7 +26,7 @@ public struct Agency : CSVParsable {
         self.phone = phone
         self.fareUrl = fareUrl
     }
-    
+
     public static func parse(data: CSVData) -> Agency? {
         let id = data["agency_id"]
         
@@ -45,7 +45,7 @@ public struct Agency : CSVParsable {
         let lang = data["agency_lang"]
         let phone = data["agency_phone"]
         let fareUrl = data["agency_fare_url"]
-        
+
         return Agency(id: id, name: name, url: url, timezone: timezone, lang: lang, phone: phone, fareUrl: fareUrl)
     }
 
