@@ -30,8 +30,6 @@ public struct Agency : CSVParsable {
     public static func parse(data: CSVData) -> Agency? {
         let id = data["agency_id"]
         
-        //print(data)
-        
         guard let name = data["agency_name"] else {
             return nil
         }
