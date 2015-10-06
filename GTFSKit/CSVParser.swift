@@ -21,8 +21,12 @@ public class CSVParser {
         self.lines = lines
     }
 
+    private func stripWhitespace(value: String) -> String {
+        return value.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+    }
+
     private func getRowValues(line: String) -> [String] {
-        return line.characters.split(",").map(String.init)
+        return line.characters.split(",").map(String.init).map(stripWhitespace)
     }
 
     private func getParsedData(lines: [String]) -> [CSVData] {
