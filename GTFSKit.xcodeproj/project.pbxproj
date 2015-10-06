@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04257A821BC42CCB00F06643 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04257A811BC42CCB00F06643 /* Route.swift */; settings = {ASSET_TAGS = (); }; };
+		04257A841BC43A7800F06643 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04257A831BC43A7800F06643 /* Trip.swift */; settings = {ASSET_TAGS = (); }; };
 		044D9E861BC3043200ADB986 /* GTFSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044D9E7B1BC3043200ADB986 /* GTFSKit.framework */; settings = {ASSET_TAGS = (); }; };
 		044D9E8B1BC3043200ADB986 /* GTFSKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D9E8A1BC3043200ADB986 /* GTFSKitTests.swift */; };
 		04E13D3F1BC306B80070B75D /* GTFSKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E13D3E1BC306B80070B75D /* GTFSKit.swift */; settings = {ASSET_TAGS = (); }; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		04257A811BC42CCB00F06643 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		04257A831BC43A7800F06643 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		044D9E7B1BC3043200ADB986 /* GTFSKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GTFSKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		044D9E801BC3043200ADB986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		044D9E851BC3043200ADB986 /* GTFSKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GTFSKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,7 @@
 				04E13D441BC3D2510070B75D /* Stop.swift */,
 				04E13D461BC3D81B0070B75D /* CSVData.swift */,
 				04257A811BC42CCB00F06643 /* Route.swift */,
+				04257A831BC43A7800F06643 /* Trip.swift */,
 			);
 			path = GTFSKit;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				04E13D431BC317690070B75D /* CSVParser.swift in Sources */,
 				04257A821BC42CCB00F06643 /* Route.swift in Sources */,
 				04E13D451BC3D2510070B75D /* Stop.swift in Sources */,
+				04257A841BC43A7800F06643 /* Trip.swift in Sources */,
 				04E13D471BC3D81B0070B75D /* CSVData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
