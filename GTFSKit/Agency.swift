@@ -28,20 +28,14 @@ public struct Agency : CSVParsable {
     }
 
     public static func parse(data: CSVData) -> Agency? {
+        if !data.containsColumns("agency_name", "agency_url", "agency_timezone") {
+            return nil
+        }
+
         let id = data["agency_id"]
-        
-        guard let name = data["agency_name"] else {
-            return nil
-        }
-        
-        guard let url = data["agency_url"] else {
-            return nil
-        }
-        
-        guard let timezone = data["agency_timezone"] else {
-            return nil
-        }
-    
+        let name = data["agency_name"]!
+        let url = data["agency_url"]!
+        let timezone = data["agency_timezone"]!
         let lang = data["agency_lang"]
         let phone = data["agency_phone"]
         let fareUrl = data["agency_fare_url"]
