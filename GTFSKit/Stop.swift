@@ -1,5 +1,5 @@
 //
-//  Agency.swift
+//  Stop.swift
 //  GTFSKit
 //
 //  Created by Jack Wilsdon on 05/10/2015.
