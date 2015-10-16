@@ -34,6 +34,14 @@ public class CSVData {
         return true
     }
 
+    public func get<T>(columnName: String, parser: (String -> T?)) -> T? {
+        if let value = self[columnName] {
+            return parser(value);
+        } else {
+            return nil;
+        }
+    }
+
     public subscript(columnName: String) -> String? {
         get {
             return data[columnName]
