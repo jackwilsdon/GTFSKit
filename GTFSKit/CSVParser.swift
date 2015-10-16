@@ -14,6 +14,7 @@ public protocol CSVParsable {
 
 public protocol CSVEnumerable : RawRepresentable {
     static func fromString(value: String) -> Self?
+    static func fromString(defaultValue: Self)(value: String) -> Self?
 }
 
 public extension CSVEnumerable where Self: RawRepresentable, Self.RawValue == Int {
@@ -23,6 +24,14 @@ public extension CSVEnumerable where Self: RawRepresentable, Self.RawValue == In
         }
 
         return nil
+    }
+
+    public static func fromString(defaultValue: Self)(value: String) -> Self? {
+        if let actualValue = fromString(value) {
+            return actualValue
+        }
+
+        return defaultValue
     }
 }
 
