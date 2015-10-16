@@ -12,6 +12,16 @@ public protocol CSVParsable {
     static func parse(data: CSVData) -> Self?
 }
 
+public protocol CSVEnumerable : RawRepresentable {
+    static func fromString(value: String) -> Self?
+}
+
+public extension CSVEnumerable where Self: RawRepresentable, Self.RawValue == Int {
+    static func fromString(value: String) -> Self? {
+        return GTFSKit.createEnumFromStringValueFunction(Self.self)(value: value)
+    }
+}
+
 public class CSVParser {
     private let lines: [String]
     public init(lines: [String]) {

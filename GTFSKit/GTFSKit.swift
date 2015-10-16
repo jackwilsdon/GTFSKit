@@ -8,22 +8,18 @@
 
 import Foundation
 
-public protocol ValueEnum {
-    init?(rawValue: Int)
-}
-
-public enum LocationType: Int, ValueEnum {
+public enum LocationType: Int, CSVEnumerable {
     case Stop = 0
     case Station = 1
 }
 
-public enum Accessibility: Int, ValueEnum {
+public enum Accessibility: Int, CSVEnumerable {
     case Unknown = 0
     case Some = 1
     case None = 2
 }
 
-public enum RouteType: Int, ValueEnum {
+public enum RouteType: Int, CSVEnumerable {
     case Street = 0
     case Underground = 1
     case Rail = 2
@@ -34,23 +30,21 @@ public enum RouteType: Int, ValueEnum {
     case InclineRail = 7
 }
 
-public enum Direction: Int, ValueEnum {
+public enum Direction: Int, CSVEnumerable {
     case Forward = 0
     case Backward = 1
 }
 
 public class GTFSKit {
-    public static func createEnumFromValue<T: ValueEnum>(value: String, type: T.Type) -> T? {
+    public static func createEnumFromValueFunction<T: RawRepresentable where T.RawValue == Int>(type: T.Type)(value: Int) -> T? {
+        return T(rawValue: value)
+    }
+
+    public static func createEnumFromStringValueFunction<T: RawRepresentable where T.RawValue == Int>(type: T.Type)(value: String) -> T? {
         if let intValue = Int(value) {
-            return T(rawValue: intValue)
+            return createEnumFromValueFunction(type)(value: intValue)
         }
 
         return nil
-    }
-
-    public static func wrapCreateEnumFromValue<T: ValueEnum>(type: T.Type) -> (String -> T?) {
-        return { (value: String) -> T? in
-            return self.createEnumFromValue(value, type: type)
-        }
     }
 }

@@ -42,7 +42,7 @@ public struct Route : CSVParsable {
         let longName = data["route_long_name"]!
         let desc = data["route_desc"]
 
-        let wrappedType: RouteType? = data.get("route_type", parser: GTFSKit.wrapCreateEnumFromValue(RouteType))
+        let wrappedType: RouteType? = data.get("route_type", parser: RouteType.fromString)
 
         guard let type = wrappedType else {
             return nil
