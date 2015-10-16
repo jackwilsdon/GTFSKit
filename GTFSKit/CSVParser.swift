@@ -12,12 +12,12 @@ public protocol CSVParsable {
     static func parse(data: CSVData) -> Self?
 }
 
-public protocol CSVEnumerable : RawRepresentable {
+public protocol CSVEnumeration : RawRepresentable {
     static func fromString(value: String) -> Self?
     static func fromString(defaultValue: Self)(value: String) -> Self?
 }
 
-public extension CSVEnumerable where Self: RawRepresentable, Self.RawValue == Int {
+public extension CSVEnumeration where Self: RawRepresentable, Self.RawValue == Int {
     public static func fromString(value: String) -> Self? {
         if let intValue = Int(value) {
             return Self(rawValue: intValue)

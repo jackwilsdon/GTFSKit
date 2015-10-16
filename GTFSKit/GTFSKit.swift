@@ -8,18 +8,18 @@
 
 import Foundation
 
-public enum LocationType: Int, CSVEnumerable {
+public enum LocationType: Int, CSVEnumeration {
     case Stop = 0
     case Station = 1
 }
 
-public enum Accessibility: Int, CSVEnumerable {
+public enum Accessibility: Int, CSVEnumeration {
     case Unknown = 0
     case Some = 1
     case None = 2
 }
 
-public enum RouteType: Int, CSVEnumerable {
+public enum RouteType: Int, CSVEnumeration {
     case Street = 0
     case Underground = 1
     case Rail = 2
@@ -30,7 +30,7 @@ public enum RouteType: Int, CSVEnumerable {
     case InclineRail = 7
 }
 
-public enum Direction: Int, CSVEnumerable {
+public enum Direction: Int, CSVEnumeration {
     case Forward = 0
     case Backward = 1
 }
