@@ -40,5 +40,17 @@ public enum Direction: Int, ValueEnum {
 }
 
 public class GTFSKit {
+    public static func createEnumFromValue<T: ValueEnum>(value: String, type: T.Type) -> T? {
+        if let intValue = Int(value) {
+            return T(rawValue: intValue)
+        }
 
+        return nil
+    }
+
+    public static func wrapCreateEnumFromValue<T: ValueEnum>(type: T.Type) -> (String -> T?) {
+        return { (value: String) -> T? in
+            return self.createEnumFromValue(value, type: type)
+        }
+    }
 }
