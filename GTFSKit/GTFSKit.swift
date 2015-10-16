@@ -8,18 +8,22 @@
 
 import Foundation
 
-public enum LocationType: Int {
+public protocol ValueEnum {
+    init?(rawValue: Int)
+}
+
+public enum LocationType: Int, ValueEnum {
     case Stop = 0
     case Station = 1
 }
 
-public enum Accessibility: Int {
+public enum Accessibility: Int, ValueEnum {
     case Unknown = 0
     case Some = 1
     case None = 2
 }
 
-public enum RouteType: Int {
+public enum RouteType: Int, ValueEnum {
     case Street = 0
     case Underground = 1
     case Rail = 2
@@ -30,7 +34,7 @@ public enum RouteType: Int {
     case InclineRail = 7
 }
 
-public enum Direction: Int {
+public enum Direction: Int, ValueEnum {
     case Forward = 0
     case Backward = 1
 }
