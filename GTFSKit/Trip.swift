@@ -49,9 +49,9 @@ public struct Trip: CSVParsable {
         let blockId = data["block_id"]
         let shapeId = data["shape_id"]
 
-        let wheelchairAccessible = data.get("wheelchair_accessible", parser: Accessibility.fromString)
+        let wheelchairAccessible = data.get("wheelchair_accessible", parser: Accessibility.fromString(Accessibility.Unknown))
 
-        let bikesAllowed = data.get("bikes_allowed", parser: Accessibility.fromString)
+        let bikesAllowed = data.get("bikes_allowed", parser: Accessibility.fromString(Accessibility.Unknown))
 
         return Trip(routeId: routeId, serviceId: serviceId, id: id, headsign: headsign, shortName: shortName, direction: direction, blockId: blockId, shapeId: shapeId, wheelchairAccessible: wheelchairAccessible, bikesAllowed: bikesAllowed)
     }

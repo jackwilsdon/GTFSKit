@@ -48,10 +48,10 @@ public struct StopTime: CSVParsable {
         }
 
         let stopHeadsign = data["stop_headsign"]
-        let pickupType = data.get("pickup_type", parser: BoardingType.fromString)
-        let dropOffType = data.get("drop_off_type", parser: BoardingType.fromString)
+        let pickupType = data.get("pickup_type", parser: BoardingType.fromString(BoardingType.Regular))
+        let dropOffType = data.get("drop_off_type", parser: BoardingType.fromString(BoardingType.Regular))
         let shapeDistTraveled = data["shape_dist_traveled"]
-        let timepoint = data.get("timepoint", parser: Timepoint.fromString)
+        let timepoint = data.get("timepoint", parser: Timepoint.fromString(Timepoint.Exact))
 
         return StopTime(tripId: tripId, arrivalTime: arrivalTime, departureTime: departureTime, stopId: stopId, stopSequence: stopSequence, stopHeadsign: stopHeadsign, pickupType: pickupType, dropOffType: dropOffType, shapeDistTraveled: shapeDistTraveled, timepoint: timepoint)
     }
