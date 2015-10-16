@@ -44,32 +44,14 @@ public struct Trip: CSVParsable {
         let headsign = data["trip_headsign"]
         let shortName = data["trip_short_name"]
 
-        var direction: Direction? = nil
-
-        if let directionString = data["direction_id"] {
-            if let directionValue = Int(directionString) {
-                direction = Direction(rawValue: directionValue)
-            }
-        }
+        let direction: Direction? = data.get("direction_id", parser: Direction.fromString)
 
         let blockId = data["block_id"]
         let shapeId = data["shape_id"]
 
-        var wheelchairAccessible: Accessibility? = nil
+        let wheelchairAccessible = data.get("wheelchair_accessible", parser: Accessibility.fromString)
 
-        if let wheelchairAccessibleString = data["wheelchair_accessible"] {
-            if let wheelchairAccessibleValue = Int(wheelchairAccessibleString) {
-                wheelchairAccessible = Accessibility(rawValue: wheelchairAccessibleValue)
-            }
-        }
-
-        var bikesAllowed: Accessibility? = nil
-
-        if let bikesAllowedString = data["bikes_allowed"] {
-            if let bikesAllowedValue = Int(bikesAllowedString) {
-                bikesAllowed = Accessibility(rawValue: bikesAllowedValue)
-            }
-        }
+        let bikesAllowed = data.get("bikes_allowed", parser: Accessibility.fromString)
 
         return Trip(routeId: routeId, serviceId: serviceId, id: id, headsign: headsign, shortName: shortName, direction: direction, blockId: blockId, shapeId: shapeId, wheelchairAccessible: wheelchairAccessible, bikesAllowed: bikesAllowed)
     }

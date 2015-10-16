@@ -51,24 +51,12 @@ public struct Stop : CSVParsable {
         let zoneId = data["zone_id"]
         let url = data["stop_url"]
 
-        var locationType: LocationType? = nil
-
-        if let locationTypeString = data["location_type"] {
-            if let locationTypeValue = Int(locationTypeString) {
-                locationType = LocationType(rawValue: locationTypeValue)
-            }
-        }
+        let locationType = data.get("location_type", parser: LocationType.fromString)
 
         let parentStation = data["parent_station"]
         let stopTimezone = data["stop_timezone"]
 
-        var wheelchairBoarding: Accessibility? = nil
-
-        if let wheelchairBoardingString = data["wheelchair_boarding"] {
-            if let wheelchairBoardingValue = Int(wheelchairBoardingString) {
-                wheelchairBoarding = Accessibility(rawValue: wheelchairBoardingValue)
-            }
-        }
+        let wheelchairBoarding: Accessibility? = data.get("wheelchair_boarding", parser: Accessibility.fromString)
 
         return Stop(id: id, code: code, name: name, desc: desc, lat: lat, lon: lon, zoneId: zoneId, url: url, locationType: locationType, parentStation: parentStation, stopTimezone: stopTimezone, wheelchairBoarding: wheelchairBoarding)
     }
