@@ -35,16 +35,4 @@ public enum Direction: Int, CSVEnumerable {
     case Backward = 1
 }
 
-public class GTFSKit {
-    public static func createEnumFromValueFunction<T: RawRepresentable where T.RawValue == Int>(type: T.Type)(value: Int) -> T? {
-        return T(rawValue: value)
-    }
-
-    public static func createEnumFromStringValueFunction<T: RawRepresentable where T.RawValue == Int>(type: T.Type)(value: String) -> T? {
-        if let intValue = Int(value) {
-            return createEnumFromValueFunction(type)(value: intValue)
-        }
-
-        return nil
-    }
-}
+public class GTFSKit {}

@@ -17,8 +17,12 @@ public protocol CSVEnumerable : RawRepresentable {
 }
 
 public extension CSVEnumerable where Self: RawRepresentable, Self.RawValue == Int {
-    static func fromString(value: String) -> Self? {
-        return GTFSKit.createEnumFromStringValueFunction(Self.self)(value: value)
+    public static func fromString(value: String) -> Self? {
+        if let intValue = Int(value) {
+            return Self(rawValue: intValue)
+        }
+
+        return nil
     }
 }
 
