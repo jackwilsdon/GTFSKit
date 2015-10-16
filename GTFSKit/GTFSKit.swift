@@ -35,4 +35,16 @@ public enum Direction: Int, CSVEnumeration {
     case Backward = 1
 }
 
+public enum BoardingType: Int, CSVEnumeration {
+    case Regular = 0
+    case None = 1
+    case MustPhone = 2
+    case MustCoordinate = 3
+}
+
+public enum Timepoint: Int, CSVEnumeration {
+    case Approximate = 0
+    case Exact = 1
+}
+
 public class GTFSKit {}
