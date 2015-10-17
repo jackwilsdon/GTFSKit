@@ -30,6 +30,13 @@ public enum RouteType: Int, CSVEnumeration {
     case InclineRail = 7
 }
 
+public enum TransferType: Int, CSVEnumeration {
+    case Reccomended = 0
+    case Timed = 1
+    case Minimum = 2
+    case None = 3
+}
+
 public enum Direction: Int, CSVEnumeration {
     case Forward = 0
     case Backward = 1
