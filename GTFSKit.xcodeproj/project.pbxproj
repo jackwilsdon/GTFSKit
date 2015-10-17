@@ -18,6 +18,7 @@
 		04E13D451BC3D2510070B75D /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E13D441BC3D2510070B75D /* Stop.swift */; settings = {ASSET_TAGS = (); }; };
 		04E13D471BC3D81B0070B75D /* CSVData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E13D461BC3D81B0070B75D /* CSVData.swift */; settings = {ASSET_TAGS = (); }; };
 		73C2ACE91BD1CC6000444E91 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C2ACE81BD1CC6000444E91 /* Calendar.swift */; settings = {ASSET_TAGS = (); }; };
+		73C2ACEF1BD1DC3700444E91 /* Transfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C2ACEE1BD1DC3700444E91 /* Transfer.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		04E13D441BC3D2510070B75D /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
 		04E13D461BC3D81B0070B75D /* CSVData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVData.swift; sourceTree = "<group>"; };
 		73C2ACE81BD1CC6000444E91 /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		73C2ACEE1BD1DC3700444E91 /* Transfer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transfer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				044D9E801BC3043200ADB986 /* Info.plist */,
 				04E13D3E1BC306B80070B75D /* GTFSKit.swift */,
 				04E13D401BC307BD0070B75D /* Agency.swift */,
+				73C2ACEE1BD1DC3700444E91 /* Transfer.swift */,
 				04E13D421BC317690070B75D /* CSVParser.swift */,
 				04E13D441BC3D2510070B75D /* Stop.swift */,
 				73C2ACE81BD1CC6000444E91 /* Calendar.swift */,
@@ -223,6 +226,7 @@
 				04E13D431BC317690070B75D /* CSVParser.swift in Sources */,
 				04257A821BC42CCB00F06643 /* Route.swift in Sources */,
 				04E13D451BC3D2510070B75D /* Stop.swift in Sources */,
+				73C2ACEF1BD1DC3700444E91 /* Transfer.swift in Sources */,
 				04257A841BC43A7800F06643 /* Trip.swift in Sources */,
 				0497337B1BD1B11700A492E7 /* StopTime.swift in Sources */,
 				04E13D471BC3D81B0070B75D /* CSVData.swift in Sources */,
