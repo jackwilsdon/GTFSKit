@@ -1,5 +1,5 @@
 //
-//  CalendarDates.swift
+//  CalendarDate.swift
 //  GTFSKit
 //
 //  Created by Rocky Breslow on 10/16/15.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct CalendarDates: CSVParsable {
+public struct CalendarDate: CSVParsable {
     public let serviceId: String                    // service_id                (Required)
     public let date: NSDate                         // date                      (Required)
     public let exceptionType: ExceptionType         // exception_type            (Required)
@@ -19,7 +19,7 @@ public struct CalendarDates: CSVParsable {
         self.exceptionType = exceptionType
     }
     
-    public static func parse(data: CSVData) -> CalendarDates? {
+    public static func parse(data: CSVData) -> CalendarDate? {
         if !data.containsColumns("service_id", "date", "exception_type") {
             return nil
         }
@@ -33,7 +33,7 @@ public struct CalendarDates: CSVParsable {
         
         let exceptionType = data.get("exception_type", parser: ExceptionType.fromString)!
         
-        return CalendarDates(serviceId: serviceId, date: date, exceptionType: exceptionType)
+        return CalendarDate(serviceId: serviceId, date: date, exceptionType: exceptionType)
     }
     
 }
