@@ -37,6 +37,11 @@ public enum TransferType: Int, CSVEnumeration {
     case None = 3
 }
 
+public enum ExceptionType: Int, CSVEnumeration {
+    case Added = 1
+    case Removed = 2
+}
+
 public enum Direction: Int, CSVEnumeration {
     case Forward = 0
     case Backward = 1
