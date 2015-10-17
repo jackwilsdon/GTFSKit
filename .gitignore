@@ -39,3 +39,6 @@ xcuserdata
 # Carthage/Checkouts
 
 Carthage/Build
+
+# misc
+.DS_Store
