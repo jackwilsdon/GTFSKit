@@ -171,7 +171,6 @@
 				TargetAttributes = {
 					044D9E7A1BC3043200ADB986 = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = FH255PA5PC;
 					};
 					044D9E841BC3043200ADB986 = {
 						CreatedOnToolsVersion = 7.0.1;
