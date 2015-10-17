@@ -1,6 +1,6 @@
 language: objective-c
 script:
-- xcodebuild -workspace GTFSKit.xcworkspace -scheme GTFSKitTests -sdk iphonesimulator
+- xcodebuild -workspace GTFSKit.xcworkspace -scheme GTFSKit -sdk iphonesimulator
   -destination 'platform=iOS Simulator,name=iPhone 6S,OS=9.0' test
 notifications:
   slack:
