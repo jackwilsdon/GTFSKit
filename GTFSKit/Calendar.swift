@@ -32,12 +32,12 @@ public struct Calendar: CSVParsable {
         self.startDate = startDate
         self.endDate = endDate
     }
-    
+
     public static func parse(data: CSVData) -> Calendar? {
         if !data.containsColumns("service_id", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday", "start_date", "end_date") {
             return nil
         }
-        
+
         let serviceId = data["service_id"]!
         let monday = data.get("monday", parser: { $0 == "1" })!
         let tuesday = data.get("tuesday", parser: { $0 == "1" })!
@@ -46,14 +46,14 @@ public struct Calendar: CSVParsable {
         let friday = data.get("friday", parser: { $0 == "1" })!
         let saturday = data.get("saturday", parser: { $0 == "1" })!
         let sunday = data.get("sunday", parser: { $0 == "1" })!
-        
+
         let formatter = NSDateFormatter()
         formatter.dateFormat = "yyyyMMdd"
-        
+
         let startDate = formatter.dateFromString(data["start_date"]!)!
         let endDate = formatter.dateFromString(data["start_date"]!)!
 
         return Calendar(serviceId: serviceId, monday: monday, tuesday: tuesday, wednesday: wednesday, thursday: thursday, friday: friday, saturday: saturday, sunday: sunday, startDate: startDate, endDate: endDate)
     }
-    
+
 }

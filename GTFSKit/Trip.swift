@@ -55,5 +55,5 @@ public struct Trip: CSVParsable {
 
         return Trip(routeId: routeId, serviceId: serviceId, id: id, headsign: headsign, shortName: shortName, direction: direction, blockId: blockId, shapeId: shapeId, wheelchairAccessible: wheelchairAccessible, bikesAllowed: bikesAllowed)
     }
-    
+
 }

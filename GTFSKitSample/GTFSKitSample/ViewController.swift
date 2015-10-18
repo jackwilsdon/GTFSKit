@@ -16,9 +16,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let parser = CSVParser(lines: ["agency_name,agency_url,agency_timezone", "a,b,c", "1,2,3"])
         let agencies = parser.parse(Agency)
-        
+
         print(agencies)
-        
+
         // Do any additional setup after loading the view, typically from a nib.
     }
 

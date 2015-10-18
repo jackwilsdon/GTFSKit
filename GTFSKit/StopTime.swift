@@ -55,5 +55,5 @@ public struct StopTime: CSVParsable {
 
         return StopTime(tripId: tripId, arrivalTime: arrivalTime, departureTime: departureTime, stopId: stopId, stopSequence: stopSequence, stopHeadsign: stopHeadsign, pickupType: pickupType, dropOffType: dropOffType, shapeDistTraveled: shapeDistTraveled, timepoint: timepoint)
     }
-    
+
 }

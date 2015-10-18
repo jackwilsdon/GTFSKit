@@ -52,5 +52,5 @@ public struct Route : CSVParsable {
 
         return Route(id: id, agencyId: agencyId, shortName: shortName, longName: longName, desc: desc, type: type, url: url, color: color, textColor: textColor)
     }
-    
+
 }
