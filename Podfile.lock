@@ -1,20 +1,20 @@
 PODS:
-  - CSVKit (0.4.0)
+  - CSVKit (0.4.1)
 
 DEPENDENCIES:
-  - CSVKit (from `https://github.com/jackwilsdon/CSVKit.git`, tag `0.4.0`)
+  - CSVKit (from `https://github.com/jackwilsdon/CSVKit.git`, tag `0.4.1`)
 
 EXTERNAL SOURCES:
   CSVKit:
     :git: https://github.com/jackwilsdon/CSVKit.git
-    :tag: 0.4.0
+    :tag: 0.4.1
 
 CHECKOUT OPTIONS:
   CSVKit:
     :git: https://github.com/jackwilsdon/CSVKit.git
-    :tag: 0.4.0
+    :tag: 0.4.1
 
 SPEC CHECKSUMS:
-  CSVKit: 56359fac6b987b95add146ebf2dda1a58c65631c
+  CSVKit: 06142340946b79fa2c9ce808b85571d5978511c5
 
 COCOAPODS: 0.39.0
