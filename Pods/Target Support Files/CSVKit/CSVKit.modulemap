@@ -1,0 +1,6 @@
+framework module CSVKit {
+  umbrella header "CSVKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
