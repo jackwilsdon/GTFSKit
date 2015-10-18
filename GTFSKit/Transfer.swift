@@ -2,9 +2,6 @@
 //  Transfer.swift
 //  GTFSKit
 //
-//  Created by Rocky Breslow on 10/16/15.
-//  Copyright © 2015 Jack Wilsdon. All rights reserved.
-//
 
 import Foundation
 
