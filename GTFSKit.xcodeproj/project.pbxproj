@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04093D781BD31A320084A10D /* GTFSKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 04093D771BD31A320084A10D /* GTFSKit.h */; settings = {ASSET_TAGS = (); }; };
+		04093D781BD31A320084A10D /* GTFSKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 04093D771BD31A320084A10D /* GTFSKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04257A821BC42CCB00F06643 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04257A811BC42CCB00F06643 /* Route.swift */; settings = {ASSET_TAGS = (); }; };
 		04257A841BC43A7800F06643 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04257A831BC43A7800F06643 /* Trip.swift */; settings = {ASSET_TAGS = (); }; };
 		044D9E861BC3043200ADB986 /* GTFSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044D9E7B1BC3043200ADB986 /* GTFSKit.framework */; settings = {ASSET_TAGS = (); }; };
