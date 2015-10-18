@@ -4,40 +4,22 @@
 //
 
 import Foundation
+import CSVKit
 
-public struct Agency : CSVParsable {
-    public let id: String?      // agency_id        (Optional)
-    public let name: String     // agency_name      (Required)
-    public let url: String      // agency_url       (Required)
-    public let timezone: String // agency_timezone  (Required)
-    public let lang: String?    // agency_lang      (Optional)
-    public let phone: String?   // agency_phone     (Optional)
-    public let fareUrl: String? // agency_fare_url  (Optional)
+public class Agency : CSVRowObject {
+    public var id: String? { return self["agency_id"].asString }                // agency_id        (Optional)
+    public var name: String { return self["agency_name"].asString! }            // agency_name      (Required)
+    public var url: String { return self["agency_url"].asString! }              // agency_url       (Required)
+    public var timezone: String { return self["agency_timezone"].asString! }    // agency_timezone  (Required)
+    public var lang: String? { return self["agency_lang"].asString }            // agency_lang      (Optional)
+    public var phone: String? { return self["agency_phone"].asString }          // agency_phone     (Optional)
+    public var fareUrl: String? { return self["agency_fare_url"].asString }     // agency_fare_url  (Optional)
 
-    public init(id: String?, name: String, url: String, timezone: String, lang: String?, phone: String?, fareUrl: String?) {
-        self.id = id
-        self.name = name
-        self.url = url
-        self.timezone = timezone
-        self.lang = lang
-        self.phone = phone
-        self.fareUrl = fareUrl
-    }
+    public required init?(_ row: CSVRow) {
+        super.init(row)
 
-    public static func parse(data: CSVData) -> Agency? {
-        if !data.containsColumns("agency_name", "agency_url", "agency_timezone") {
+        if !row.containsHeadings("agency_name", "agency_url", "agency_timezone") {
             return nil
         }
-
-        let id = data["agency_id"]
-        let name = data["agency_name"]!
-        let url = data["agency_url"]!
-        let timezone = data["agency_timezone"]!
-        let lang = data["agency_lang"]
-        let phone = data["agency_phone"]
-        let fareUrl = data["agency_fare_url"]
-
-        return Agency(id: id, name: name, url: url, timezone: timezone, lang: lang, phone: phone, fareUrl: fareUrl)
     }
-
 }
