@@ -44,6 +44,24 @@ public class CSV {
         self.init(raw.characters.split(lineSeparator).map(String.init), separator: separator)
     }
 
+    public func find(field: String, value: String) -> CSVRow {
+        var index: Int?
+
+        for (_, column) in columns {
+            if let unwrappedIndex = column.indexOf(value) {
+                index = unwrappedIndex
+
+                break
+            }
+        }
+
+        if let unwrappedIndex = index {
+            return self[unwrappedIndex]
+        }
+
+        return CSVRow()
+    }
+
     public subscript(index: Int) -> CSVRow {
         var row = [String: CSVValue]()
         var valid = true
@@ -65,13 +83,5 @@ public class CSV {
         }
 
         return CSVRow(row)
-    }
-
-    public subscript(index: String) -> CSVColumn {
-        if let column = columns[index] {
-            return CSVColumn(index, column.map(CSVValue.init))
-        } else {
-            return CSVColumn()
-        }
     }
 }

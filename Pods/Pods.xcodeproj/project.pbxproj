@@ -8,17 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		0D50F4AE3BABE40B70F7C7F22BEBFADE /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */; };
+		18FD78C0CCEAEC625F821D63D8408A10 /* CSVRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17005BE837978CDC6C9B1B2F7799BF9A /* CSVRow.swift */; };
+		21755168607A2ED0D22D9896252DEBDD /* CSVKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C4A534DBC3B67BE7903D61B92CBC4D /* CSVKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29BB7D9773745A0E9DEADE8CEA950CF7 /* CSVKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 62646226FFB5339A8157DF4E3E43B977 /* CSVKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D75079790DC0008DEF15E5E10704944 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77423DE2B753EB99CBC5E12BE339053 /* CSV.swift */; };
 		4E22144B4215324141030C225A8D1208 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		517B1299CF685CE7105C227CD5220A82 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56893C08244B5B543F6D29F454074BD1 /* CSVColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBED29B67DABF4F916AC743C67AC7CE2 /* CSVColumn.swift */; };
-		752FE1EA6C04680CE20D13A252D52DB7 /* CSVValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B7FB02C9DE43C9EF19A965D88F257F /* CSVValue.swift */; };
-		95A6D238C0FCD542978B5246196E207F /* CSVKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89867CFDF98EEEAC182B6999DD82DFE /* CSVKit.swift */; };
-		A940671B430FC1B8B73BB3855106BFD2 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658AD001C323DE48ED1A59D2B461ED96 /* CSV.swift */; };
-		B931B739C4F99A2AFE4D11CFA8B5254F /* CSVKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D6408B1EB0F3E0F77596638C2A1E70 /* CSVKit-dummy.m */; };
-		CF350EE50CBDD580B3B95A7250216A25 /* CSVRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDECEE39AE493B3DB91A6B917A5BA7D4 /* CSVRow.swift */; };
-		D6AF97F44B8B9311A1CA33936B9E31EF /* CSVKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5AD3182E03B49CC1D6DFE19DD221BF8 /* CSVKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D77A4162101C8159FCA8F0FF7FA077E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		ED986DAA3C603139E9287025BA6AEF05 /* CSVKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BDEB808784AA723959659CB8D6BC2E60 /* CSVKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		528EB265387A45905CFF3C3D4DD4F94E /* CSVSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C1CC658F2CA751DCB6926BE7EDCCFA /* CSVSet.swift */; };
+		58E5256FD738F4A49ADC15AF34D8059F /* CSVValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B4F5A40C84862494F42E41BDD4E442 /* CSVValue.swift */; };
+		5EA1045DC4693CCD3237F05A78ACEF52 /* CSVKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC12E954901B877727DDD238E334151A /* CSVKit.swift */; };
+		7039B1673615CD47258B6B684AF2B63D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		FA4770AAD35EB2C76120388AB0785DAF /* CSVKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B54F0C5FF1A47F156110C54B23B2AE /* CSVKit-dummy.m */; };
+		FB8A12A2E0BEC62511968B0D44A4A39A /* CSVRowObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8750B2E7DA122B31210AA66860E9254 /* CSVRowObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,38 +27,39 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B3AA147745F56CE30EE5B213D05F9D56;
+			remoteGlobalIDString = C3C3A8FDD185DC9438A0A3ED2D8505A1;
 			remoteInfo = CSVKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06C0CBF42F4A2508E365A33751507A42 /* CSVKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CSVKit.xcconfig; sourceTree = "<group>"; };
+		05B4F5A40C84862494F42E41BDD4E442 /* CSVValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVValue.swift; path = CSVKit/CSVValue.swift; sourceTree = "<group>"; };
+		17005BE837978CDC6C9B1B2F7799BF9A /* CSVRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVRow.swift; path = CSVKit/CSVRow.swift; sourceTree = "<group>"; };
 		2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		38C1CC658F2CA751DCB6926BE7EDCCFA /* CSVSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVSet.swift; path = CSVKit/CSVSet.swift; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		42ACA063DD2CD2420AFB401A4776183D /* CSVKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSVKit-prefix.pch"; sourceTree = "<group>"; };
-		4A70FBF1215C16CCD160C42FB4C09EF7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		658AD001C323DE48ED1A59D2B461ED96 /* CSV.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSV.swift; path = CSVKit/CSV.swift; sourceTree = "<group>"; };
+		5FD30BA9692ACCF242F5683CDFEA6B93 /* CSVKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CSVKit.xcconfig; sourceTree = "<group>"; };
+		62646226FFB5339A8157DF4E3E43B977 /* CSVKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSVKit.h; path = CSVKit/CSVKit.h; sourceTree = "<group>"; };
+		65C4A534DBC3B67BE7903D61B92CBC4D /* CSVKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSVKit-umbrella.h"; sourceTree = "<group>"; };
+		785102589C2C306ABBF23C98683A6627 /* CSVKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSVKit-prefix.pch"; sourceTree = "<group>"; };
 		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
-		81B7FB02C9DE43C9EF19A965D88F257F /* CSVValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVValue.swift; path = CSVKit/CSVValue.swift; sourceTree = "<group>"; };
 		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
 		894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
 		977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		A0B54F0C5FF1A47F156110C54B23B2AE /* CSVKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CSVKit-dummy.m"; sourceTree = "<group>"; };
 		AE601EBC9F4A081856B0B420789E8F20 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA3952AB76283F0EB9F9E6FC0497BF64 /* CSVKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CSVKit.modulemap; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BBED29B67DABF4F916AC743C67AC7CE2 /* CSVColumn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVColumn.swift; path = CSVKit/CSVColumn.swift; sourceTree = "<group>"; };
-		BDEB808784AA723959659CB8D6BC2E60 /* CSVKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSVKit.h; path = CSVKit/CSVKit.h; sourceTree = "<group>"; };
-		C5AD3182E03B49CC1D6DFE19DD221BF8 /* CSVKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSVKit-umbrella.h"; sourceTree = "<group>"; };
-		C82FB1558D8F427828076E273F85E628 /* CSVKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CSVKit.modulemap; sourceTree = "<group>"; };
-		C89867CFDF98EEEAC182B6999DD82DFE /* CSVKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVKit.swift; path = CSVKit/CSVKit.swift; sourceTree = "<group>"; };
+		CAA101D1AF192FC93E2AECF1699C8C9F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
 		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D77423DE2B753EB99CBC5E12BE339053 /* CSV.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSV.swift; path = CSVKit/CSV.swift; sourceTree = "<group>"; };
 		DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		DDECEE39AE493B3DB91A6B917A5BA7D4 /* CSVRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVRow.swift; path = CSVKit/CSVRow.swift; sourceTree = "<group>"; };
-		E1D6408B1EB0F3E0F77596638C2A1E70 /* CSVKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CSVKit-dummy.m"; sourceTree = "<group>"; };
+		DC12E954901B877727DDD238E334151A /* CSVKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVKit.swift; path = CSVKit/CSVKit.swift; sourceTree = "<group>"; };
 		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
 		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDC29D45A1CFAFF07D18992B29ACED7A /* CSVKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSVKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8750B2E7DA122B31210AA66860E9254 /* CSVRowObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVRowObject.swift; path = CSVKit/CSVRowObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,43 +71,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F530539FB9572DF366731E85ADFC8734 /* Frameworks */ = {
+		E27BE102EBE1147F12BA18651C0F7948 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D77A4162101C8159FCA8F0FF7FA077E1 /* Foundation.framework in Frameworks */,
+				7039B1673615CD47258B6B684AF2B63D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05F583C7C3C6EDB14D60D0384E4AD753 /* CSVKit */ = {
+		6466C39087524761079A800F38D02D09 /* CSVKit */ = {
 			isa = PBXGroup;
 			children = (
-				658AD001C323DE48ED1A59D2B461ED96 /* CSV.swift */,
-				BBED29B67DABF4F916AC743C67AC7CE2 /* CSVColumn.swift */,
-				BDEB808784AA723959659CB8D6BC2E60 /* CSVKit.h */,
-				C89867CFDF98EEEAC182B6999DD82DFE /* CSVKit.swift */,
-				DDECEE39AE493B3DB91A6B917A5BA7D4 /* CSVRow.swift */,
-				81B7FB02C9DE43C9EF19A965D88F257F /* CSVValue.swift */,
-				3002E35837E8001F2B1515B8938C5EA3 /* Support Files */,
+				D77423DE2B753EB99CBC5E12BE339053 /* CSV.swift */,
+				62646226FFB5339A8157DF4E3E43B977 /* CSVKit.h */,
+				DC12E954901B877727DDD238E334151A /* CSVKit.swift */,
+				17005BE837978CDC6C9B1B2F7799BF9A /* CSVRow.swift */,
+				F8750B2E7DA122B31210AA66860E9254 /* CSVRowObject.swift */,
+				38C1CC658F2CA751DCB6926BE7EDCCFA /* CSVSet.swift */,
+				05B4F5A40C84862494F42E41BDD4E442 /* CSVValue.swift */,
+				A1B6A6A540BA4E6186DD499D851C4425 /* Support Files */,
 			);
 			path = CSVKit;
-			sourceTree = "<group>";
-		};
-		3002E35837E8001F2B1515B8938C5EA3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C82FB1558D8F427828076E273F85E628 /* CSVKit.modulemap */,
-				06C0CBF42F4A2508E365A33751507A42 /* CSVKit.xcconfig */,
-				E1D6408B1EB0F3E0F77596638C2A1E70 /* CSVKit-dummy.m */,
-				42ACA063DD2CD2420AFB401A4776183D /* CSVKit-prefix.pch */,
-				C5AD3182E03B49CC1D6DFE19DD221BF8 /* CSVKit-umbrella.h */,
-				4A70FBF1215C16CCD160C42FB4C09EF7 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CSVKit";
 			sourceTree = "<group>";
 		};
 		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
@@ -131,7 +120,7 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				B4209B6CDEED0FEBDAC78BB056710E36 /* Pods */,
+				B0A2D447ECD5F8EB51C679F99F2C4EF7 /* Pods */,
 				97FC898FAFB72C5C49B0485B737E3EB9 /* Products */,
 				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
 			);
@@ -146,10 +135,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B4209B6CDEED0FEBDAC78BB056710E36 /* Pods */ = {
+		A1B6A6A540BA4E6186DD499D851C4425 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				05F583C7C3C6EDB14D60D0384E4AD753 /* CSVKit */,
+				BA3952AB76283F0EB9F9E6FC0497BF64 /* CSVKit.modulemap */,
+				5FD30BA9692ACCF242F5683CDFEA6B93 /* CSVKit.xcconfig */,
+				A0B54F0C5FF1A47F156110C54B23B2AE /* CSVKit-dummy.m */,
+				785102589C2C306ABBF23C98683A6627 /* CSVKit-prefix.pch */,
+				65C4A534DBC3B67BE7903D61B92CBC4D /* CSVKit-umbrella.h */,
+				CAA101D1AF192FC93E2AECF1699C8C9F /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CSVKit";
+			sourceTree = "<group>";
+		};
+		B0A2D447ECD5F8EB51C679F99F2C4EF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6466C39087524761079A800F38D02D09 /* CSVKit */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -189,12 +192,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6BE57B9C389A0A3EDD0BAE873B075FB7 /* Headers */ = {
+		D6ADDA9BE9D17429CC852A4083C17775 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6AF97F44B8B9311A1CA33936B9E31EF /* CSVKit-umbrella.h in Headers */,
-				ED986DAA3C603139E9287025BA6AEF05 /* CSVKit.h in Headers */,
+				21755168607A2ED0D22D9896252DEBDD /* CSVKit-umbrella.h in Headers */,
+				29BB7D9773745A0E9DEADE8CEA950CF7 /* CSVKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,13 +222,13 @@
 			productReference = AE601EBC9F4A081856B0B420789E8F20 /* Pods.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B3AA147745F56CE30EE5B213D05F9D56 /* CSVKit */ = {
+		C3C3A8FDD185DC9438A0A3ED2D8505A1 /* CSVKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92CE6A29CE87FDF0F894C3EF85D4CC37 /* Build configuration list for PBXNativeTarget "CSVKit" */;
+			buildConfigurationList = 3EA337624A8D65DEB00E99EBD0F7EAE5 /* Build configuration list for PBXNativeTarget "CSVKit" */;
 			buildPhases = (
-				6702C01ADCA97E70913D8D4900B24AD9 /* Sources */,
-				F530539FB9572DF366731E85ADFC8734 /* Frameworks */,
-				6BE57B9C389A0A3EDD0BAE873B075FB7 /* Headers */,
+				2CC26C4C6C4FE0941E3FAD69FBF6023F /* Sources */,
+				E27BE102EBE1147F12BA18651C0F7948 /* Frameworks */,
+				D6ADDA9BE9D17429CC852A4083C17775 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -257,7 +260,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B3AA147745F56CE30EE5B213D05F9D56 /* CSVKit */,
+				C3C3A8FDD185DC9438A0A3ED2D8505A1 /* CSVKit */,
 				1A7CBCF1984CEE463EB871B3859559B1 /* Pods */,
 			);
 		};
@@ -272,16 +275,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6702C01ADCA97E70913D8D4900B24AD9 /* Sources */ = {
+		2CC26C4C6C4FE0941E3FAD69FBF6023F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A940671B430FC1B8B73BB3855106BFD2 /* CSV.swift in Sources */,
-				56893C08244B5B543F6D29F454074BD1 /* CSVColumn.swift in Sources */,
-				B931B739C4F99A2AFE4D11CFA8B5254F /* CSVKit-dummy.m in Sources */,
-				95A6D238C0FCD542978B5246196E207F /* CSVKit.swift in Sources */,
-				CF350EE50CBDD580B3B95A7250216A25 /* CSVRow.swift in Sources */,
-				752FE1EA6C04680CE20D13A252D52DB7 /* CSVValue.swift in Sources */,
+				3D75079790DC0008DEF15E5E10704944 /* CSV.swift in Sources */,
+				FA4770AAD35EB2C76120388AB0785DAF /* CSVKit-dummy.m in Sources */,
+				5EA1045DC4693CCD3237F05A78ACEF52 /* CSVKit.swift in Sources */,
+				18FD78C0CCEAEC625F821D63D8408A10 /* CSVRow.swift in Sources */,
+				FB8A12A2E0BEC62511968B0D44A4A39A /* CSVRowObject.swift in Sources */,
+				528EB265387A45905CFF3C3D4DD4F94E /* CSVSet.swift in Sources */,
+				58E5256FD738F4A49ADC15AF34D8059F /* CSVValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +295,7 @@
 		8E8894553B550BE9DE031195A0E83844 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CSVKit;
-			target = B3AA147745F56CE30EE5B213D05F9D56 /* CSVKit */;
+			target = C3C3A8FDD185DC9438A0A3ED2D8505A1 /* CSVKit */;
 			targetProxy = 996BDBB3F52D770081FFC17F9BC3E473 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -326,34 +330,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		34B5B7E524214C22C9F7109BF2E85CC4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06C0CBF42F4A2508E365A33751507A42 /* CSVKit.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CSVKit/CSVKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CSVKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CSVKit/CSVKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = CSVKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		48461AB2E511ED1039938BC40FE12E94 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -425,9 +401,37 @@
 			};
 			name = Debug;
 		};
-		B786D07D22F99DDD3CDB79156F9DD48A /* Release */ = {
+		C1BCBD5A5632B243923578D3229BBC1E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06C0CBF42F4A2508E365A33751507A42 /* CSVKit.xcconfig */;
+			baseConfigurationReference = 5FD30BA9692ACCF242F5683CDFEA6B93 /* CSVKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CSVKit/CSVKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CSVKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CSVKit/CSVKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CSVKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D5E243C74708D6AF5BBB8D700E687D26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FD30BA9692ACCF242F5683CDFEA6B93 /* CSVKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -498,11 +502,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92CE6A29CE87FDF0F894C3EF85D4CC37 /* Build configuration list for PBXNativeTarget "CSVKit" */ = {
+		3EA337624A8D65DEB00E99EBD0F7EAE5 /* Build configuration list for PBXNativeTarget "CSVKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				34B5B7E524214C22C9F7109BF2E85CC4 /* Debug */,
-				B786D07D22F99DDD3CDB79156F9DD48A /* Release */,
+				C1BCBD5A5632B243923578D3229BBC1E /* Debug */,
+				D5E243C74708D6AF5BBB8D700E687D26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

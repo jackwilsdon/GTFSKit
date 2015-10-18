@@ -17,14 +17,6 @@ public class CSVValue {
 
     public let valid: Bool
 
-    public func asEnum<T: RawRepresentable where T.RawValue == Int>() -> T? {
-        if let intValue = asInt {
-            return T(rawValue: intValue)
-        }
-
-        return nil
-    }
-
     public init(_ csvValue: String) {
         rawValue = csvValue
         valid = true
@@ -34,4 +26,21 @@ public class CSVValue {
         rawValue = nil
         valid = false
     }
+
+    public func asEnum<T: RawRepresentable where T.RawValue == Int>() -> T? {
+        if let intValue = asInt {
+            return T(rawValue: intValue)
+        }
+
+        return nil
+    }
+
+    public func getRelational(key: String, csv: CSV) -> CSVRow {
+        if let value = asString {
+            return csv.find(key, value: value)
+        }
+
+        return CSVRow()
+    }
+
 }

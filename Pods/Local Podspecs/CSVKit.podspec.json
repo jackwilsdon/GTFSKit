@@ -1,6 +1,6 @@
 {
   "name": "CSVKit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "A simple CSV parser written in Swift.",
   "description": "A simple CSV parser written in Swift.\n\nFeatures a nice safety system to make it easy to use without\nmessing around with optionals, even if a field does not exist!",
   "homepage": "https://github.com/jackwilsdon/CSVKit",

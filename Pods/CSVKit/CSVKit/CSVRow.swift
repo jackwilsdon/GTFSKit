@@ -29,6 +29,10 @@ public class CSVRow {
         valid = false
     }
 
+    public func asRowObject<T: CSVRowObject>(type: T.Type) -> T {
+        return T(self)
+    }
+
     public subscript(index: String) -> CSVValue {
         if !valid {
             return CSVValue()

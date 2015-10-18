@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+public final class CSVKit {
+    public static let VersionNumber: Double = CSVKitVersionNumber
+
+    private init() {}
+}
