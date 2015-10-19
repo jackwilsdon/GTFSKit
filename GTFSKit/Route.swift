@@ -5,7 +5,7 @@
 
 import Foundation
 
-public struct Route : CSVParsable {
+public struct Route: CSVParsable {
     public let id: String           // route_id         (Required)
     public let agencyId: String?    // agency_id        (Optional)
     public let shortName: String    // route_short_name (Required)

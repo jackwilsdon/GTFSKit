@@ -6,7 +6,7 @@
 import Foundation
 import CoreLocation
 
-public struct Stop : CSVParsable {
+public struct Stop: CSVParsable {
     public let id: String                           // stop_id              (Required)
     public let code: String?                        // stop_code            (Optional)
     public let name: String                         // stop_name            (Required)

@@ -6,7 +6,7 @@
 import Foundation
 import CSVKit
 
-public class Agency : CSVRowObject {
+public class Agency: CSVRowObject {
     public var id: String? { return self["agency_id"].asString }                // agency_id        (Optional)
     public var name: String { return self["agency_name"].asString! }            // agency_name      (Required)
     public var url: String { return self["agency_url"].asString! }              // agency_url       (Required)

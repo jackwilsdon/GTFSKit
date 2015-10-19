@@ -9,7 +9,7 @@ public protocol CSVParsable {
     static func parse(data: CSVData) -> Self?
 }
 
-public protocol CSVEnumeration : RawRepresentable {
+public protocol CSVEnumeration: RawRepresentable {
     static func fromString(value: String) -> Self?
     static func fromString(defaultValue: Self)(value: String) -> Self?
 }
